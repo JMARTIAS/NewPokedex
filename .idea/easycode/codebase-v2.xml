@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/app/src/androidTest/java/com/example/newpokedex/ExampleInstrumentedTest.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/src/main/java/com/example/newpokedex/ui/theme/Color.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/src/main/java/com/example/newpokedex/ui/theme/Theme.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/src/main/java/com/example/newpokedex/ui/theme/Type.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/src/main/java/com/example/newpokedex/MainActivity.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/src/test/java/com/example/newpokedex/ExampleUnitTest.kt;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/app/build.gradle.kts;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/build.gradle.kts;C:/Users/PC RSY/AndroidStudioProjects/NewPokedex/settings.gradle.kts" />
+  </component>
+</project>
