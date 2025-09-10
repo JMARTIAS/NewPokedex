@@ -1,6 +1,6 @@
 package com.example.newpokedex.data.remote.responses
 
-data class Animated(
+data class Showdown(
     val back_default: String,
     val back_female: Any,
     val back_shiny: String,

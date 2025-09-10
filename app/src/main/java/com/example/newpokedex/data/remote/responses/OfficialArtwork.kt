@@ -1,9 +1,6 @@
 package com.example.newpokedex.data.remote.responses
 
-
-import com.google.gson.annotations.SerializedName
-
 data class OfficialArtwork(
-    @SerializedName("front_default")
-    val frontDefault: String
+    val front_default: String,
+    val front_shiny: String
 )
