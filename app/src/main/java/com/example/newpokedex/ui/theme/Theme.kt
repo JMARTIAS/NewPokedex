@@ -1,4 +1,4 @@
-package com.plcoding.jetpackcomposepokedex.ui.theme
+package com.example.newpokedex.ui.theme
 
 import android.app.Activity
 import android.os.Build
