@@ -1,15 +1,10 @@
 package com.example.newpokedex.data.remote.responses
 
-
-import com.google.gson.annotations.SerializedName
-
 data class RedBlue(
-    @SerializedName("back_default")
-    val backDefault: String,
-    @SerializedName("back_gray")
-    val backGray: String,
-    @SerializedName("front_default")
-    val frontDefault: String,
-    @SerializedName("front_gray")
-    val frontGray: String
+    val back_default: String,
+    val back_gray: String,
+    val back_transparent: String,
+    val front_default: String,
+    val front_gray: String,
+    val front_transparent: String
 )

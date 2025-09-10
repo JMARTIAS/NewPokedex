@@ -1,4 +1,4 @@
-package com.example.newpokedex.ui.theme
+package com.plcoding.jetpackcomposepokedex.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes // Importa Shapes de M3
