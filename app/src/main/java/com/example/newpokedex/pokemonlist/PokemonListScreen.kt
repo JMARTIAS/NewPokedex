@@ -54,8 +54,8 @@ import coil.compose.AsyncImagePainter
 import coil.request.ImageRequest
 import com.example.newpokedex.R
 import com.example.newpokedex.data.models.PokedexListEntry
-import kotlin.text.isEmpty
-import kotlin.text.isNotEmpty
+import java.util.*
+
 
 
 @Composable
@@ -189,7 +189,7 @@ fun PokedexEntry(
     }
 
     Box(
-        contentAlignment = Center,
+        contentAlignment = Alignment.Center,
         modifier = modifier
             .shadow(5.dp, RoundedCornerShape(10.dp))
             .clip(RoundedCornerShape(10.dp))
@@ -217,7 +217,7 @@ fun PokedexEntry(
                 contentDescription = entry.pokemonName,
                 modifier = Modifier
                     .size(120.dp)
-                    .align(CenterHorizontally),
+                    .align(Alignment.CenterHorizontally),
                 onSuccess = { successState: AsyncImagePainter.State.Success ->
                     val drawable = successState.result.drawable
                     viewModel.calcDominantColor(drawable) { color ->

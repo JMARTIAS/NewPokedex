@@ -17,19 +17,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.*
 import javax.inject.Inject
-import kotlin.collections.filter
-import kotlin.collections.mapIndexed
-import kotlin.collections.plus
-import kotlin.let
-import kotlin.text.capitalize
-import kotlin.text.contains
-import kotlin.text.dropLast
-import kotlin.text.endsWith
-import kotlin.text.isDigit
-import kotlin.text.isEmpty
-import kotlin.text.takeLastWhile
-import kotlin.text.toInt
-import kotlin.text.trim
+import kotlin.text.compareTo
+import kotlin.toString
 
 @HiltViewModel
 class PokemonListViewModel @Inject constructor(
@@ -97,7 +86,7 @@ class PokemonListViewModel @Inject constructor(
 
                     loadError.value = ""
                     isLoading.value = false
-                    pokemonList.value + pokedexEntries
+                    pokemonList.value += pokedexEntries
                 }
                 is Resource.Error -> {
                     loadError.value = result.message!!
