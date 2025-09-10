@@ -19,11 +19,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.newpokedex.pokemondetail.PokemonDetailScreen
 import com.example.newpokedex.pokemonlist.PokemonListScreen
-import com.plcoding.jetpackcomposepokedex.ui.theme.NewPokedexTheme
+import com.example.newpokedex.ui.theme.NewPokedexTheme
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
-
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,11 +56,11 @@ class MainActivity : ComponentActivity() {
                         val pokemonName = remember {
                             it.arguments?.getString("pokemonName")
                         }
-/*                        PokemonDetailScreen(
+                        PokemonDetailScreen(
                             dominantColor = dominantColor,
                             pokemonName = pokemonName?.toLowerCase(Locale.ROOT) ?: "",
                             navController = navController
-                        )*/
+                        )
                     }
                 }
             }

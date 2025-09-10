@@ -1,5 +1,6 @@
 package com.example.newpokedex.pokemondetail
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.newpokedex.data.remote.responses.Pokemon
 import com.example.newpokedex.repository.PokemonRepository
@@ -13,6 +14,9 @@ class PokemonDetailViewModel @Inject constructor(
 ) : ViewModel() {
 
     suspend fun getPokemonInfo(pokemonName: String): Resource<Pokemon> {
-        return repository.getPokemonInfo(pokemonName)
+        Log.d("PokemonDetailVM", "Fetching info for: $pokemonName")
+        val result = repository.getPokemonInfo(pokemonName)
+        Log.d("PokemonDetailVM", "Result for $pokemonName: $result")
+        return result
     }
 }
