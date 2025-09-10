@@ -1,23 +1,12 @@
 package com.example.newpokedex.data.remote.responses
 
-
-import com.google.gson.annotations.SerializedName
-
 data class Versions(
-    @SerializedName("generation-i")
-    val generationI: GenerationI,
-    @SerializedName("generation-ii")
-    val generationIi: GenerationIi,
-    @SerializedName("generation-iii")
-    val generationIii: GenerationIii,
-    @SerializedName("generation-iv")
-    val generationIv: GenerationIv,
-    @SerializedName("generation-v")
-    val generationV: GenerationV,
-    @SerializedName("generation-vi")
-    val generationVi: GenerationVi,
-    @SerializedName("generation-vii")
-    val generationVii: GenerationVii,
-    @SerializedName("generation-viii")
-    val generationViii: GenerationViii
+    val generation1: GenerationI,
+    val generation2: GenerationIi,
+    val generation3: GenerationIii,
+    val generation4: GenerationIv,
+    val generation5: GenerationV,
+    val generation6: GenerationVi,
+    val generation7: GenerationVii,
+    val generation8: GenerationViii
 )

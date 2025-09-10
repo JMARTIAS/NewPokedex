@@ -1,15 +1,9 @@
 package com.example.newpokedex.data.remote.responses
 
-
-import com.google.gson.annotations.SerializedName
-
 data class Silver(
-    @SerializedName("back_default")
-    val backDefault: String,
-    @SerializedName("back_shiny")
-    val backShiny: String,
-    @SerializedName("front_default")
-    val frontDefault: String,
-    @SerializedName("front_shiny")
-    val frontShiny: String
+    val back_default: String,
+    val back_shiny: String,
+    val front_default: String,
+    val front_shiny: String,
+    val front_transparent: String
 )
